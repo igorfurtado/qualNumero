@@ -1,15 +1,13 @@
 
-# QUAL É O NÚMERO?
+<h1 align="center";>QUAL É O NÚMERO?</h1> 
 
 O objetivo deste jogo é adivinhar por meio de palpites qual o número (entre 1 e 300) que foi "pensado" pela aplicação.
 
-
-
-
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+<p align="center">
+  <img style="width: 700px;" src="https://user-images.githubusercontent.com/70289587/147693696-e9e57f54-bde1-4868-920b-f365d9022074.png" alt="Qual o número?"/>
+</p>
 
 ## Documentação
 
