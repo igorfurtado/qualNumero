@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: rgb(238, 238, 238);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh; /*Com o body tendo 100vh, as "divs" internas poderão se alinhar verticalmente no centro da página.*/
+    max-height: -webkit-fill-available;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    --cor-default: #000000;
+    overflow-x: hidden;
+}
+
+@media screen and (min-width: 250px){
+    .title{
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        background: -webkit-linear-gradient(rgba(239, 108, 0, 1), rgba(219, 99, 0, 1));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    #container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 150px;
+    }
+    
+    #firstBox{
+        margin-right: 12px;
+    }
+    
+    #secondBox{
+        margin-right: 12px;
+    }
+    #thirdBox{
+        margin-right: 12px;
+    }
+    
+    .topPart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent;
+        border-top: 16px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-radius: 10px;
+    }
+    
+    .bottomPart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent;
+        border-top: 8px solid transparent;
+        border-bottom: 16px solid transparent;
+        border-radius: 10px;
+    }
+    
+    .zeroTop{
+        border-top-color: var(--cor-default);
+        border-left-color: var(--cor-default);
+        border-right-color: var(--cor-default);
+        border-bottom-color: rgba(221, 221, 221, 0.3);
+    }
+    
+    .zeroBottom{
+        border-top-color: rgba(221, 221, 221, 0.3);
+        border-left-color: var(--cor-default);
+        border-right-color: var(--cor-default);
+        border-bottom-color: var(--cor-default);
+    }
+    
+    .oneTop{
+        border-top-color: rgba(221, 221, 221, 0.3);
+        border-left-color:  rgba(221, 221, 221, 0.3);
+        border-right-color: var(--cor-default);
+        border-bottom-color:  rgba(221, 221, 221, 0.3);
+    }
+    
+    .oneBottom{
+        border-top-color: rgba(221, 221, 221, 0.3);
+        border-left-color: rgba(221, 221, 221, 0.3);
+        border-right-color: var(--cor-default);
+        border-bottom-color: rgba(221, 221, 221, 0.3);
+    }
+    
+    .twoTop{
+        border-top-color: var(--cor-default);
+        border-left-color:  rgba(221, 221, 221, 0.3);
+        border-right-color: var(--cor-default);
+        border-bottom-color:  var(--cor-default);
+    }
+    
+    .twoBottom{
+        border-top-color: var(--cor-default);
+        border-left-color: var(--cor-default);
+        border-right-color: rgba(221, 221, 221, 0.3);
+        border-bottom-color: var(--cor-default);
+    }
+    
+    .threeTop{
+        border-top-color: var(--cor-default);
+        border-left-color:  rgba(221, 221, 221, 0.3);
+        border-right-color: var(--cor-default);
+        border-bottom-color:  var(--cor-default);
+    }
+    
+    .threeBottom{
+        border-top-color: var(--cor-default);
+        border-left-color: rgba(221, 221, 221, 0.3);
+        border-right-color: var(--cor-default);
+        border-bottom-color: var(--cor-default);
+    }
+    
+    .fourTop{
+        border-top-color: rgba(221, 221, 221, 0.3);
+        border-left-color:  var(--cor-default);
+        border-right-color: var(--cor-default);
+        border-bottom-color:  var(--cor-default);
+    }
+    
+    .fourBottom{
+        border-top-color: var(--cor-default);
+        border-left-color: rgba(221, 221, 221, 0.3);
+        border-right-color: var(--cor-default);
+        border-bottom-color: rgba(221, 221, 221, 0.3);
+    }
+    
+    .fiveTop{
+        border-top-color: var(--cor-default);
+        border-left-color:  var(--cor-default);
+        border-right-color: rgba(221, 221, 221, 0.3);
+        border-bottom-color:  var(--cor-default);
+    }
+    
+    .fiveBottom{
+        border-top-color: var(--cor-default);
+        border-left-color: rgba(221, 221, 221, 0.3);
+        border-right-color: var(--cor-default);
+        border-bottom-color: var(--cor-default);
+    }
+    
+    .sixTop{
+        border-top-color: var(--cor-default);
+        border-left-color:  var(--cor-default);
+        border-right-color: rgba(221, 221, 221, 0.3);
+        border-bottom-color:  var(--cor-default);
+    }
+    
+    .sixBottom{
+        border-top-color: var(--cor-default);
+        border-left-color: var(--cor-default);
+        border-right-color: var(--cor-default);
+        border-bottom-color: var(--cor-default);
+    }
+    
+    .sevenTop{
+        border-top-color: var(--cor-default);
+        border-left-color:  var(--cor-default);
+        border-right-color: var(--cor-default);
+        border-bottom-color:  rgba(221, 221, 221, 0.3);
+    }
+    
+    .sevenBottom{
+        border-top-color: rgba(221, 221, 221, 0.3);
+        border-left-color: rgba(221, 221, 221, 0.3);
+        border-right-color: var(--cor-default);
+        border-bottom-color: rgba(221, 221, 221, 0.3);
+    }
+    
+    .eightTop{
+        border-top-color: var(--cor-default);
+        border-left-color:  var(--cor-default);
+        border-right-color: var(--cor-default);
+        border-bottom-color:  var(--cor-default);
+    }
+    
+    .eightBottom{
+        border-top-color: var(--cor-default);
+        border-left-color: var(--cor-default);
+        border-right-color: var(--cor-default);
+        border-bottom-color: var(--cor-default);
+    }
+    
+    .nineTop{
+        border-top-color: var(--cor-default);
+        border-left-color:  var(--cor-default);
+        border-right-color: var(--cor-default);
+        border-bottom-color:  var(--cor-default);
+    }
+    
+    .nineBottom{
+        border-top-color: var(--cor-default);
+        border-left-color: rgba(221, 221, 221, 0.3);
+        border-right-color: var(--cor-default);
+        border-bottom-color: var(--cor-default);
+    }
+    
+    .btn-restart{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        height: 42px;
+        background: linear-gradient(180deg, #434854 0%, #9E9E9E 100%);
+        border-radius: 4px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+        border-style: none;
+        transition: all 0.3s ease-out;
+    }
+    
+    .btn-restart img{
+        width: 12px;
+        margin-right: 8px;
+    }
+    
+    .displayFlex{
+        display: flex;
+    }
+    
+    .displayNone{
+        display: none;
+    }
+    
+    #statusMessage{
+        display: none;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: -1px;
+        color: rgba(255, 102, 0, 1);
+    }
+    
+    .btn-send{
+        width: 60px;
+        height: 42px;
+        background: linear-gradient(180deg, #EF6C00 0%, #C0661C 100%);
+        border-radius: 4px;
+        color: #FFFFFF;
+        border-style: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+        transition: all 0.3s ease-out;
+    }
+    
+    .btn-restart:hover, .btn-send:hover{
+        transform: scale(1.02);
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .inputField{
+        width: 180px;
+        height: 42px;
+        background: rgb(238, 238, 238);
+        border: 1px solid #FF6600;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 14px 12px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+ @media screen and (min-width: 500px){
+
+    #container {
+        width: 400px;
+        height: 200px;
+    }
+
+    .title{
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .topPart{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .bottomPart{
+        width: 100px;
+        height: 100px;
+    }
+
+    .btn-send{
+        width: 70px;
+    }
+
+    .inputField{
+        width: 217px;
+    }
+ }
+
+ /* Dispositivos móveis (smartphones) utilizados na horizontal */
+ @media screen and (min-width: 250px) and (max-height: 420px){
+    #container {
+        width: 250px;
+        height: 105px;
+    }
+
+    .title{
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 15px;
+    }
+
+    .topPart, .bottomPart{
+        width: 60px;
+        height: 60px;
+    }
+
+    .btn-send{
+        width: 60px;
+    }
+
+    .inputField{
+        width: 180px;
+    }
+ }
+
+ /* Utilitárias */
+
+/* Somente números no input field: Chrome e outros */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Somente números no input field: Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+    
+/* Alterando a cor do placeholder */
+::-webkit-input-placeholder {
+    color: rgba(158, 158, 158, 1);
+}
+     
+:-moz-placeholder { /* Firefox 18- */
+    color: rgba(158, 158, 158, 1);  
+}
+     
+::-moz-placeholder {  /* Firefox 19+ */
+    color: rgba(158, 158, 158, 1);  
+}
+     
+:-ms-input-placeholder {  
+    color: rgba(158, 158, 158, 1);  
+}

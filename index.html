@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="./assets/question.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Prova Studio Sol</title>
+</head>
+
+<body>
+    <div>
+        <h1 class="title">Qual é o número?</h1>
+        <hr style="border-color: rgba(207, 207, 207, 0.3)" />
+    </div>
+
+    <div id="statusMessage"></div>
+    <div id="container">
+        <div id="firstBox">
+            <div class="topPart"></div>
+            <div class="bottomPart"></div>
+        </div>
+        <div id="secondBox">
+            <div class="topPart"></div>
+            <div class="bottomPart"></div>
+        </div>
+        <div id="thirdBox">
+            <div class="topPart"></div>
+            <div class="bottomPart"></div>
+        </div>
+    </div>
+
+    <button type="button" class="btn-restart" id="btnRestart" formmethod="get" onclick="restartGame()">
+        <img src="./assets/restart.png">
+        <p>NOVA PARTIDA</p>
+    </button>
+
+    <div>
+        <input type="tel" placeholder="Digite o palpite" class="inputField" maxlength="3" minlength="1"
+            onkeypress='return game.onlyNumbers(event)'>
+        <button type="button" class="btn-send" id="btnSend">Enviar</button>
+    </div>
+    
+    <script src="./game.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
