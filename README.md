@@ -22,6 +22,7 @@ de uma pasta chamada "assets", e deixá-los dentro de uma mesma pasta. Esses arq
 google drive fornecido em formato .zip no processo de submissão deste projeto.
 
 Essa aplicação também está disponível em funcionamento no seguinte endereço: 
+https://qual-numero.vercel.app/
  
 ---------------------------------------------------------------------------------------------------------
 
